@@ -1,0 +1,30 @@
+.btn-text
+    &_animated
+        animation: leftToRight 1.5s .1s ease-out
+        animation-fill-mode: backwards
+
+    
+    &:link, &:visited
+        transition: all .4s
+        position: relative
+        font-size: 1.6rem
+        letter-spacing: .2rem
+        font-weight: 700
+        text-transform: uppercase
+        text-decoration: none
+
+        color: $color-grey
+        background: $color-white
+        padding: 1rem
+        border-bottom: 1px $color-brown-dark solid 
+        display: inline-block
+        
+    &:hover
+        transform: translateX(.4rem)
+        box-shadow:($box-shadow)
+        background-color: $color-brown-dark
+        color: $color-brown-light
+    &:active
+        transform: translateY(-.1rem)
+
+

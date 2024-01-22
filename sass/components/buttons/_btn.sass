@@ -1,0 +1,21 @@
+.btn   
+    &_animated
+        animation: downToUp .5s ease-out .1s
+        animation-fill-mode: backwards
+
+    
+    &:link, &:visited
+        transition: all .35s
+        @include link-button()
+        
+    &:hover
+        transform: translateY(-.4rem)
+        box-shadow:($box-shadow)
+        &::after
+            opacity: 0
+            transform: scaleX(1.6) scaleY(1.8)
+    &:active
+        transform: translateY(-.1rem)
+
+    &::after
+        @include style-after(.35s, $color-white)
