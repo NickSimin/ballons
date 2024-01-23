@@ -118,9 +118,6 @@ body {
   width: 100%;
   backface-visibility: hidden;
 }
-.card-tour__side_front {
-  background: yellow;
-}
 .card-tour__side_back {
   background: linear-gradient(120deg, rgba(186, 133, 84, 0.7) 0.03%, rgba(164, 105, 49, 0.7) 99.94%);
   transform: rotateY(180deg);
@@ -131,7 +128,10 @@ body {
 .card-tour:hover .card-tour__side_back {
   transform: rotateY(0deg);
 }
-
+.card-tour__img {
+  height: 20rem;
+  background: #BA8554, url(../assets/tours/tour1) center/cover no-repeat;
+}
 .btn_animated {
   animation: downToUp 0.5s ease-out 0.1s;
   animation-fill-mode: backwards;
